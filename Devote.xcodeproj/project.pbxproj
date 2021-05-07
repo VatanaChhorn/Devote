@@ -13,6 +13,9 @@
 		35FDAC8B26452C5A00306E83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FDAC8A26452C5A00306E83 /* Preview Assets.xcassets */; };
 		35FDAC8D26452C5A00306E83 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FDAC8C26452C5A00306E83 /* Persistence.swift */; };
 		35FDAC9026452C5A00306E83 /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35FDAC8E26452C5A00306E83 /* Devote.xcdatamodeld */; };
+		35FDAC9A26452DAA00306E83 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35FDAC9726452DAA00306E83 /* sound-ding.mp3 */; };
+		35FDAC9B26452DAA00306E83 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35FDAC9826452DAA00306E83 /* sound-rise.mp3 */; };
+		35FDAC9C26452DAA00306E83 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35FDAC9926452DAA00306E83 /* sound-tap.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		35FDAC8C26452C5A00306E83 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		35FDAC8F26452C5A00306E83 /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
 		35FDAC9126452C5A00306E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35FDAC9726452DAA00306E83 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		35FDAC9826452DAA00306E83 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		35FDAC9926452DAA00306E83 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +62,15 @@
 		35FDAC8226452C5700306E83 /* Devote */ = {
 			isa = PBXGroup;
 			children = (
-				35FDAC8326452C5700306E83 /* DevoteApp.swift */,
-				35FDAC8526452C5700306E83 /* ContentView.swift */,
+				35FDACA226452E1C00306E83 /* Style */,
+				35FDACA126452DEB00306E83 /* Utility */,
+				35FDACA026452DDD00306E83 /* Extension */,
+				35FDAC9D26452DBA00306E83 /* Sound */,
+				35FDAC9F26452DCE00306E83 /* App */,
+				35FDAC9E26452DC700306E83 /* View */,
 				35FDAC8726452C5A00306E83 /* Assets.xcassets */,
-				35FDAC8C26452C5A00306E83 /* Persistence.swift */,
+				35FDACA326452E2900306E83 /* Model */,
 				35FDAC9126452C5A00306E83 /* Info.plist */,
-				35FDAC8E26452C5A00306E83 /* Devote.xcdatamodeld */,
 				35FDAC8926452C5A00306E83 /* Preview Content */,
 			);
 			path = Devote;
@@ -73,6 +82,62 @@
 				35FDAC8A26452C5A00306E83 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		35FDAC9D26452DBA00306E83 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				35FDAC9726452DAA00306E83 /* sound-ding.mp3 */,
+				35FDAC9826452DAA00306E83 /* sound-rise.mp3 */,
+				35FDAC9926452DAA00306E83 /* sound-tap.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		35FDAC9E26452DC700306E83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35FDAC8526452C5700306E83 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		35FDAC9F26452DCE00306E83 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				35FDAC8326452C5700306E83 /* DevoteApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		35FDACA026452DDD00306E83 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		35FDACA126452DEB00306E83 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		35FDACA226452E1C00306E83 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		35FDACA326452E2900306E83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35FDAC8C26452C5A00306E83 /* Persistence.swift */,
+				35FDAC8E26452C5A00306E83 /* Devote.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				35FDAC8B26452C5A00306E83 /* Preview Assets.xcassets in Resources */,
+				35FDAC9B26452DAA00306E83 /* sound-rise.mp3 in Resources */,
 				35FDAC8826452C5A00306E83 /* Assets.xcassets in Resources */,
+				35FDAC9C26452DAA00306E83 /* sound-tap.mp3 in Resources */,
+				35FDAC9A26452DAA00306E83 /* sound-ding.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
